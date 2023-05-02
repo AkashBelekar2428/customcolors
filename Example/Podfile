@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'customColors_Example' do
+  pod 'customColors', :path => '../'
+
+  target 'customColors_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
