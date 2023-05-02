@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,11 +18,48 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cm5-KO-rOS">
+                                <rect key="frame" x="16" y="16" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ITc-kU-hW5">
+                                <rect key="frame" x="16" y="53" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Rm-Wl-mwH">
+                                <rect key="frame" x="16" y="90" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="cm5-KO-rOS" secondAttribute="trailing" constant="16" id="08O-YV-dlv"/>
+                            <constraint firstItem="cm5-KO-rOS" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="2SK-pR-khd"/>
+                            <constraint firstAttribute="trailing" secondItem="ITc-kU-hW5" secondAttribute="trailing" constant="16" id="C8S-ga-h1a"/>
+                            <constraint firstAttribute="trailing" secondItem="3Rm-Wl-mwH" secondAttribute="trailing" constant="16" id="CmP-F9-KUp"/>
+                            <constraint firstItem="cm5-KO-rOS" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="16" id="FNy-Ak-GYF"/>
+                            <constraint firstItem="3Rm-Wl-mwH" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="Ltu-Q0-KU5"/>
+                            <constraint firstItem="3Rm-Wl-mwH" firstAttribute="top" secondItem="ITc-kU-hW5" secondAttribute="bottom" constant="16" id="f2y-xb-hiU"/>
+                            <constraint firstItem="ITc-kU-hW5" firstAttribute="top" secondItem="cm5-KO-rOS" secondAttribute="bottom" constant="16" id="vHY-3u-hRx"/>
+                            <constraint firstItem="ITc-kU-hW5" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="xdZ-pO-xdo"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cityLbl" destination="ITc-kU-hW5" id="9Ob-WB-etY"/>
+                        <outlet property="mobileLbl" destination="3Rm-Wl-mwH" id="BTA-P1-uWt"/>
+                        <outlet property="nameLbl" destination="cm5-KO-rOS" id="7Ac-t8-TyP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="48" y="-2"/>
         </scene>
     </scenes>
 </document>

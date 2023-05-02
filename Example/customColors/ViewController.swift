@@ -7,18 +7,22 @@
 //
 
 import UIKit
+import customColors
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var nameLbl:UILabel!
+    @IBOutlet weak var cityLbl:UILabel!
+    @IBOutlet weak var mobileLbl:UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        nameLbl.textColor = Color.colorBlue()
+        cityLbl.textColor = Color.colorGray()
+        mobileLbl.textColor = Color.colorgreen()
+
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
+   
 }
 
